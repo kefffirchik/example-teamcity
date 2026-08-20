@@ -8,7 +8,7 @@ https://github.com/kefffirchik/example-teamcity
 Для выполнения задания в Yandex Cloud были созданы:
 
 -   TeamCity Server --- 4 vCPU / 4 GB RAM;
--   TeamCity Agent --- 4 vCPU / 4 GB RAM;
+-   TeamCity Agent --- 2 vCPU / 4 GB RAM;
 -   Nexus Repository Manager --- 2 vCPU / 4 GB RAM.
 
 TeamCity Server был запущен в Docker-контейнере:
@@ -115,7 +115,7 @@ other branch  -> mvn clean test
 <server>
     <id>nexus</id>
     <username>admin</username>
-    <password>admin123</password>
+    <password>NEXUS_PASSWORD</password>
 </server>
 ```
 
